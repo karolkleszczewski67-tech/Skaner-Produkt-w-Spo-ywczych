@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Food Scanner",
+    "slug": "food-scanner",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Aplikacja potrzebuje dostępu do aparatu, aby skanować kody kreskowe produktów."
+        }
+      ],
+      "expo-asset",
+      "expo-sqlite"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Aplikacja potrzebuje dostępu do aparatu, aby skanować kody kreskowe produktów."
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA"
+      ]
+    }
+  }
+}
